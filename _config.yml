@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: /Myweb
+Exclude: ['README.md']
