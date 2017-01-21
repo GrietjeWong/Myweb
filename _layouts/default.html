@@ -1,22 +1,17 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>制作我的第一个网页</title>
-        <link href="{{site.baseurl}}/CSS/common.css" rel="stylesheet">
+{% include head.html %}
     </head>
     <body>
-
-      <header>
-        <h1>Welcome to my web</h1>
-        {% include nav.html navclass='nav-top'%}
-      </header>
-
-      {{content}}
-
-      <footer>
-        <p>@Copy Rights Reserved</p>
-      </footer>
+      <body id="page-top" class="index">
+      {% include header.html %}
+      {% include portfolio_grid.html %}
+      {% include about.html %}
+      {% include contact.html %}
+      {% include footer.html %}
+      {% include modals.html %}
+      {% include js.html %}
 
     </body>
 </html>
