@@ -234,7 +234,7 @@ header {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  text-align: center;
+  text-align: left;
   color: white;
 }
 header .intro-text {
