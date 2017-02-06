@@ -395,23 +395,21 @@
                                 <!-- Project Details Go Here -->
                                 <h2>Long-Term to Short-Term Rental Conversion</h2>
                                 <p class="item-intro text-muted">Background:
-XXX Properties is a residential property management company. As Short-term Rentals like Airbnb are becoming more and more popular, some of its property owners want to term some long-term rental into short-term rental. The task is to evaluate whether the conversions are necessary and profitable.
+XXX Properties is a residential property management company. As Short-term Rentals like Airbnb are becoming more and more popular, some of its property owners want to term some long-term rental properties into short-term rentals. The task is to evaluate whether the conversions are necessary and profitable.
 </p>
                                 <img class="img-responsive img-centered" src="img/portfolio/Dashboard.png" alt="">
-                                <p>Information Given:</p>
-                                <p>1.	Your analysis should be constrained to the 244 properties owned by the one client.
+                                <p>Data Given After the Interview with Relevant Stakeholders:</p>
+                                <p>1.	Tested data include 244 properties owned by the one client.
 2.	The occupancy rate of those 244 properties is 97.3% (or 36/37 months) when they are managed as long-term rentals.
-3.	The initial capital required to convert a long-term rental property to a short-term rental property is $30,000 (for furnishings, linens, etc.). That capital expenditure will depreciate over 5 years.
+3.	The initial capital required to convert a long-term rental property to a short-term rental property is $30,000 (for furnishings, linens, etc.), which will depreciate over 5 years.
 4.	$6000 in cash will be needed for each property each year after the first (conversion) year to cover items that wear out quickly. This amount is treated as an expense and is not depreciated.
 5.	Utilities will be $300 a month for each property, or $3600 a year.
 6.	The hospitality fee (variable cost) for each visit (for key service, cleaning, etc.) will be $100, regardless of the actual number of days of a visit.
 7.	The average short-term stay is 3 nights.
 8.	All the properties have the same capital expenditure and fixed costs.
-9.	10% of the rental fee should be budgeted for potential regulatory and legal fees.
-10.	20% of the rental fee should be budgeted for the online short-term rental provider (like Airbnb).
-11.	The two fees above are also combined and called the "transaction fee" in some spreadsheets and questions. The total default transaction fee is 30%.
-12.	All clients pay their rent on time.
-13.	Comparable Examples are short-term rental properties with same type and in the same locations.
+9.	The total default transaction fee is 30%, including 10% for potential regulatory and legal fees and 20% for online short-term rental provider (like Airbnb).
+10.	All clients pay their rent on time.
+11.	Comparable Examples are short-term rental properties with same type and in the same locations.
 
 Ignore the impact of any:
 · weekly or seasonal changes in rent or occupancy rate.
@@ -422,7 +420,10 @@ Ignore the impact of any:
                                 <p>Raw Forecast Model:</p>
                                 <p>To find the correlation between short-term occupancy rate and rental price</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/1.png" alt="">
-                                <p>Normalized Forecast Model:</p>
+                                <p>Normalized Forecast Model to Minimize Differences:</p>
+                                <p>we will also assume that no rent can be set lower than 10th percentile or higher than 90th.
+Sample property Percentile rent = .1 + .8*[((sample rent) – (10th percentile [low] rent)) / ((90th percentile [high] rent) – (10th percentile [low] rent))].
+</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/2.png" alt="">
                                 <p>Financial Model in Tableau:</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/Dashboard.png" alt="">
@@ -431,8 +432,7 @@ Ignore the impact of any:
                                     <p>Or copy this URL to your browser:https://public.tableau.com/profile/gabriella.huang#!/vizhome/WatershedRental/1</p>
                                 <ul class="list-inline">
                                     <li>Date: Dec. 2016</li>
-                                    <li>Client: Coursera</li>
-                                    <li>Category: Data Analysis</li>
+                                    <li>Category: Tableau Visualizaton</li>
                                 </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
