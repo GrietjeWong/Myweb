@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <script src="js/echarts.min.js"></script>
+    <script src="js/echarts.js"></script>
 
     <title>Zhendi Huang</title>
 
@@ -141,7 +141,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/Dashboard2.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/Tableau.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Sensitive Analysis</h4>
@@ -155,7 +155,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <img src="img/portfolio/Echarts.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Data Interaction</h4>
@@ -397,7 +397,7 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>Long-Term to Short-Term Rental Conversion</h2>
-                                <p class="item-intro text-muted">Background:
+                                <p class="item-intro text-mute">Background:
 XXX Properties is a residential property management company. As Short-term Rentals like Airbnb are becoming more and more popular, some of its property owners want to term some long-term rental properties into short-term rentals. The task is to evaluate whether the conversions are necessary and profitable.
 </p>
                                 <img class="img-responsive img-centered" src="img/portfolio/Dashboard.png" alt="">
@@ -460,71 +460,69 @@ Sample property Percentile rent = .1 + .8*[((sample rent) – (10th percentile [
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                <h2>Project Heading</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <h2>2016 Reading Records</h2>
+                                <p class="item-intro text-muted">The tool used to generate the charts is developed by Baidu.com. Move your mouse over the chart to view more detail.</p>
+                                <p>My records of reading in 2016 was a pleasant for me. I've been recoding such data for the whole year. By showing a data with some charts, I see my space to improve. In June, i was travelling, which contibute to a shift down of the number of books I read.</p>
                                   <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-                                    <div id="main" style="width: 600px;height:400px;"></div>
+                                    <div id="main" style="width: 720px;height:400px;"></div>
                                     <script type="text/javascript">
                                     // 基于准备好的dom，初始化echarts实例
                                     var myChart = echarts.init(document.getElementById('main'));
                                     //图表实例
                                     var xData = function() {
-    var data = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-    for (var i = 1; i < 13; i++) {
-        //data.push(i + "月份");
-        data.push(data[i]);
-    }
-    return data;
-}();
+                                    var data = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+                                    for (var i = 1; i < 13; i++) {
+                                      data.push(data[i]);
+                                    }
+                                      return data;
+                                    }();
 
-option = {
-    backgroundColor: "#FFFFFF",
-    "title": {
-        "text": "2016 Reading Records",
-        "subtext": "BY Zhendi Huang",
-       x: "6%",
+                                    var option = {
+                                    backgroundColor: "#FFFFFF",
+                                    "title": {
+                                      "text": "2016 Reading Records",
+                                      "subtext": "BY Zhendi Huang",
+                                      x: "6%",
 
-        textStyle: {
-            color: '#010D13',
-            fontSize: '22',
-        },
-        subtextStyle: {
-            color: '#90979c',
-            fontSize: '16',
-
-        },
-    },
-    "tooltip": {
-        "trigger": "axis",
-        "axisPointer": {
-            "type": "shadow",
-            textStyle: {
-                color: "#000000"
-            }
-
-        },
-    },
-    "grid": {
-        "borderWidth":0,
-        "top": 210,
-        "bottom": 90,
-        textStyle: {
-            color: "#fff"
-        }
-    },
-    "legend": {
-        x: '80%',
-        top: '11%',
-        textStyle: {
-            color: '#90979c',
-        },
-        "data": ['Personal Development', 'Professional', '平均']
-    },
+                                      textStyle: {
+                                        color: '#010D13',
+                                        fontSize: '22',
+                                      },
+                                      subtextStyle: {
+                                        color: '#90979c',
+                                        fontSize: '16',
+                                      },
+                                    },
+                                    "tooltip": {
+                                      "trigger": "axis",
+                                      "axisPointer": {
+                                        "type": "shadow",
+                                        textStyle: {
+                                          color: "#000000"
+                                        }
+                                      },
+                                    },
+                                    "grid": {
+                                      "borderWidth":0,
+                                      "top": 110,
+                                      "bottom": 90,
+                                      textStyle: {
+                                        color: "#fff"
+                                      }
+                                    },
+                                    "legend": {
+                                      x: '80%',
+                                      top: '11%',
+                                      textStyle: {
+                                        color: '#90979c',
+                                      },
+                                      "data": ['Personal Development', 'Professional', '平均']
+                                    },
 
 
-    "calculable": true,
-    "xAxis": [{
-        "type": "category",
+                                    "calculable": true,
+                                    "xAxis": [{
+                                      "type": "category",
         "axisLine": {
             lineStyle: {
                 color: '#90979c'
@@ -577,7 +575,7 @@ option = {
         "start": 10,
         "end": 80,
         handleIcon: 'path://M306.1,413c0,2.2-1.8,4-4,4h-59.8c-2.2,0-4-1.8-4-4V200.8c0-2.2,1.8-4,4-4h59.8c2.2,0,4,1.8,4,4V413z',
-        handleSize: '100%',
+        handleSize: '80%',
         handleStyle: {
             color: "#d3dee5",
 
@@ -704,7 +702,7 @@ option = {
 }
                                     myChart.setOption(option);
                                     </script>
-                                <img class="img-responsive img-centered" src="img/portfolio/3.jpg" alt="">
+
                                 <p></p>
                                 <p></p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
