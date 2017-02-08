@@ -1,20 +1,19 @@
+###Current Address
+https://grietjewong.github.io/Myweb/
 
+###Introduction
 
-###Portfolio
+My personal website powered by Jeykll.
+First outline template from Jeykll Themes.
 
-Portfolio projects are in '/_posts'
+More Modules are under development:
+Blogs
+Comments box
+Photo Wall
+...etc.
 
-Images are in '/img/portfolio'
+###Author
+Zhendi Huang
 
-###About
-
-Images are in '/img/about/'
-
-###Team
-
-Team members and info are in '_config.yml'
-
-Images are in '/img/team/'
-
-
-# Demo
+###License
+MIT
