@@ -185,7 +185,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                       <img src="img/portfolio/5.jpg" class="img-responsive" alt=""> 
+                       <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>FlowingData App</h4>
@@ -199,7 +199,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                       <img src="img/portfolio/6.jpg" class="img-responsive" alt=""> 
+                       <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>To Be Uploaded</h4>
@@ -213,7 +213,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                      <img src="img/portfolio/7.jpg" class="img-responsive" alt=""> 
+                      <img src="img/portfolio/7.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>To Be Uploaded</h4>
@@ -483,6 +483,7 @@ So that each maximized rental price of those 244 short-term properties can be ca
                                 <p class="item-intro text-muted">Interactive Charts in HTML
                                 <p class="text-left">The tool used to generate the charts is developed by Baidu.com. Move your mouse or Zoom over the charts to view more details.</p>
                                 <p class="text-left">My records of reading in 2016 was a pleasant for me. I've been recoding such data for the whole year. It was just for fun at the beginning. When visualizing the data, I see that there is much space for me to improve. In June, i was travelling, which contibute to a shift down of the number of books I read. In the last quater of the year, my reading pace was slowing down due to busy work.</p>
+
                                   <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
                                     <div id="main" style="width: 720px;height:400px;"></div>
                                     <script type="text/javascript">
@@ -721,8 +722,260 @@ So that each maximized rental price of those 244 short-term properties can be ca
     ]
 }
                                     myChart.setOption(option);
-                                    </script>
-<p class="text-left">Editing...last updated on 2017.02.08</p>
+</script>
+<p class="text-left">But eventually, I finished 44 books in total. Oops~ <br/>Still, I read paper books most of the time, eventhough they are heavier and more expensive.</p>
+<div id="Second" style="width: 720px;height:500px;"></div>
+<script type="text/javascript">
+// 基于准备好的dom，初始化echarts实例
+var SecondChart = echarts.init(document.getElementById('Second'));
+option = {
+    baseOption: {
+        tooltip: {},
+        title: [{
+            text: '2016 Books and Rankings',
+            left: 'center'
+        },  {
+            text: 'Finished\n44 Books',
+            left: '40%',
+            top: '46%',
+            textAlign: 'center',
+            textBaseline: 'middle',
+            textStyle: {
+                fontSize: 20
+            }
+        }],
+        textStyle: {
+            fontSize: 14
+        },
+        series: [{
+            color: ['#0B0B61', '#6E6E6E'],
+            type: 'pie',
+            startAngle: 23,
+            radius: ['52%', '59%'],
+            center: ['40%', '46%'],
+            data: [{
+                name: 'Paper-Back',
+                value: 25
+            }, {
+                name: 'E-Books',
+                value: 19
+            }],
+            label: {
+                normal: {
+                    formatter: '{b}：\n{c}Piece'
+                }
+            },
+               labelLine: {
+                normal: {
+                    length: 20
+                }
+            }
+        }, {
+            color: ['#1C688E', '#BDBDBD'],
+            type: 'pie',
+            startAngle: 38,
+            radius: ['42%', '51%'],
+            center: ['40%', '46%'],
+            startAngle: 30,
+            data: [{
+                name: 'Time Spent on Paper-Back',
+                value: 60.9
+            }, {
+                name: 'Time Spent on E-Books',
+                value: 39.1
+            }],
+            label: {
+                normal: {
+                    formatter: '{b}：\n{c}%'
+                }
+            },
+            labelLine: {
+                normal: {
+                    length: 80
+                }
+            }
+        },  {
+            color: ['#347268', '#0e8a77', '#22a994', '#22ccae', '#63cdb9'],
+            type: 'pie',
+            radius: ['20%', '40%'],
+            center: ['40%', '46%'],
+            startAngle: 0,
+            data: [{
+                name: '1 Star',
+                value: 2
+            }, {
+                name: '2 Stars',
+                value: 1
+            }, {
+                name: '3 Stars',
+                value: 3
+            }, {
+                name: '4 Stars',
+                value: 21
+            }, {
+                name: '5 Stars',
+                value: 17
+            }],
+            label: {
+                normal: {
+                    formatter: '{b}：\n{c}Piece'
+                }
+            },
+            labelLine: {
+                normal: {
+                    length: 100
+                }
+            },
+            itemStyle: {
+                normal: {
+                    opacity: 0.9
+                }
+            }
+        }, {
+            name: 'Likes',
+            type: 'bar',
+            itemStyle: {
+                normal: {
+                    color: '#0B0B61'
+                }
+            },
+            symbolSize: 6,
+            data: [828.96],
+            stack: 'income',
+            barWidth: 30,
+            label: {
+                normal: {
+                    show: true,
+                    position: 'inside',
+                    formatter: function(obj) {
+                        return obj.value + 'RMB';
+                    }
+                }
+            }
+        }, {
+            name: 'Given by Friends',
+            type: 'bar',
+            itemStyle: {
+                normal: {
+                    color: '#BDBDBD'
+                }
+            },
+            symbolSize: 6,
+            data: [323.13],
+            stack: 'income',
+            barWidth: 30,
+            label: {
+                normal: {
+                    show: true,
+                    position: 'inside',
+                    formatter: function(obj) {
+                        return obj.value + 'RMB';
+                    }
+                }
+            }
+        }, {
+            name: 'Spending',
+            type: 'bar',
+            itemStyle: {
+                normal: {
+                    color: '#1C688E'
+                }
+            },
+            data: [1101.06],
+            barWidth: 30,
+            label: {
+                normal: {
+                    show: true,
+                    position: 'inside',
+                    formatter: function(obj) {
+                        return obj.value + 'RMB';
+                    }
+                }
+            }
+        }],
+        xAxis: {
+            show: false,
+            axisTick: {
+                show: false
+            },
+            inverse: true
+        },
+        yAxis: [{
+            show: false,
+            interval: 0,
+            nameLocation: 'end',
+            data: [
+                ' '
+            ],
+            axisTick: {
+                show: false
+            }
+        }],
+        grid: [{
+            left: '60%',
+            bottom: '60%',
+            top: 100,
+            right: 20
+        }],
+        legend: {
+            show: true,
+            data: ['Likes', 'Given by Friends', 'Spending'],
+            right: 15,
+            top: 35,
+            align: 'right',
+            orient: 'vertical'
+        }
+    },
+    media: [{
+        query: {
+            maxWidth: 600
+        },
+        option: {
+            title: [{
+                left: 'center'
+            }, {
+                left: '50%',
+                top: '72%'
+            }, {
+                left: '48%',
+                top: '22%'
+            }],
+            series: [{
+                radius: ['42%', '48%'],
+                center: ['50%', '25%']
+            }, {
+                startAngle: 180,
+                radius: ['28%', '38%'],
+                center: ['50%', '75%'],
+                labelLine: {
+                    normal: {
+                        length: 30
+                    }
+                }
+            }, {
+                startAngle: 0,
+                radius: ['40%', '42%'],
+                center: ['50%', '75%'],
+                labelLine: {
+                    normal: {
+                        length: 20
+                    }
+                }
+            }, {
+                radius: ['25%', '45%'],
+                center: ['50%', '25%'],
+                labelLine: {
+                    normal: {
+                        length: 30
+                    }
+                }
+            }]
+        }
+    }]
+}
+  SecondChart.setOption(option)
+</script>
+<p class="text-left">Editing...last updated on 2017.02.09</p>
 
                                 <p></p>
                                 <p></p>
