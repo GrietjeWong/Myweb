@@ -1,5 +1,5 @@
 # Site settings
-email:
+email: zhendi.huang@hotmail.com
 baseurl: ""
 paginate: 5
 paginate_path: "/blog/page-:num"
@@ -17,7 +17,7 @@ name:
 profile_img:
 profile:
 social:
-  github:
+  github: https://github.com/GrietjeWong
 
 # Build settings
 exclude: ["_screenshots", "Gemfile", "Gemfile.lock", "LICENSE.txt", "README.md"]

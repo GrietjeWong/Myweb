@@ -5,7 +5,7 @@ date: 2016-12-20
 categories:
   - DataAnalysis数据分析
 description:
-image: crew-56835.jpg
+image: /img/crew-56835.jpg
 image-sm:
 ---
 最近闲来无事，做了个小型的数据分析研究。数据来源于在职选修的一门课程，属于Capstone的一个研究课题。数据量不大，工具也很简单。个人感觉，要做好数据分析，更重要的是解决问题的思路，流畅的算法，对整体流程要有清晰的思路。<br/>
