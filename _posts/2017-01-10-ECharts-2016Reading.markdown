@@ -5,7 +5,7 @@ date: 2017-01-10
 categories:
   - DataAnalysis数据分析
 description:
-image: /img/aga-putra-125108.jpg
+image: https://unsplash.it/2000/1200?image=367
 image-sm:
 ---
 核心技术：Echarts<br/>
