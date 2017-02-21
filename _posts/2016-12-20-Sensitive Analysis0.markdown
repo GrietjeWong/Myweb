@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "个人网站建立的一些碎碎念"
+title: "用Jekyll建立个人网站的一些碎碎念"
 date: 2016-12-01
 categories:
   - Journal
