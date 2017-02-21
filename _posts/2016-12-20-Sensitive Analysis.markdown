@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "如何运用Tableau做敏感性分析"
+title: "基于Tableau的敏感性分析"
 date: 2016-12-20
 categories:
   - DataAnalysis数据分析

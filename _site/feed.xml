@@ -5,14 +5,272 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 21 Feb 2017 18:16:32 +0800</pubDate>
-    <lastBuildDate>Tue, 21 Feb 2017 18:16:32 +0800</lastBuildDate>
+    <pubDate>Tue, 21 Feb 2017 19:41:39 +0800</pubDate>
+    <lastBuildDate>Tue, 21 Feb 2017 19:41:39 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>我的2016年读书数据</title>
-        <description>&lt;p&gt;核心技术：Echarts&lt;br /&gt;
-新旧网站的替换，内容搬运中…..&lt;/p&gt;
+        <description>&lt;p&gt;核心技术：Echarts&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;最近几年读的书真是越来越有征兆。前几天在GitHub上git到一个很有意思的图表展示工具，一玩就上瘾了。呐～废话不多说，先上个图：&lt;/p&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;ECharts&lt;/title&gt;
+    &lt;!-- 引入 echarts.js --&gt;
+    &lt;script src=&quot;/assets/js/echarts.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- 为ECharts准备一个具备大小（宽高）的Dom --&gt;
+    &lt;div id=&quot;main&quot; style=&quot;width: 750px;height:400px;&quot;&gt;&lt;/div&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById(&#39;main&#39;));
+
+        // 指定图表的配置项和数据
+        var xData = function() {
+    var data = [&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;];
+    for (var i = 1; i &lt; 13; i++) {
+        //data.push(i + &quot;月份&quot;);
+        data.push(data[i]);
+    }
+    return data;
+}();
+
+option = {
+    backgroundColor: &quot;#FAFAFA&quot;,
+    &quot;title&quot;: {
+        &quot;text&quot;: &quot;2016 Reading Records&quot;,
+        &quot;subtext&quot;: &quot;BY Zhendi Huang&quot;,
+       x: &quot;6%&quot;,
+
+        textStyle: {
+            color: &#39;#010D13&#39;,
+            fontSize: &#39;22&#39;,
+        },
+        subtextStyle: {
+            color: &#39;#90979c&#39;,
+            fontSize: &#39;16&#39;,
+
+        },
+    },
+    &quot;tooltip&quot;: {
+        &quot;trigger&quot;: &quot;axis&quot;,
+        &quot;axisPointer&quot;: {
+            &quot;type&quot;: &quot;shadow&quot;,
+            textStyle: {
+                color: &quot;#000000&quot;
+            }
+
+        },
+    },
+    &quot;grid&quot;: {
+        &quot;borderWidth&quot;:0,
+        &quot;top&quot;: 210,
+        &quot;bottom&quot;: 90,
+        textStyle: {
+            color: &quot;#fff&quot;
+        }
+    },
+    &quot;legend&quot;: {
+        x: &#39;70%&#39;,
+        top: &#39;11%&#39;,
+        textStyle: {
+            color: &#39;#90979c&#39;,
+        },
+        &quot;data&quot;: [&#39;Personal Development&#39;, &#39;Professional&#39;, &#39;平均&#39;]
+    },
+
+
+    &quot;calculable&quot;: true,
+    &quot;xAxis&quot;: [{
+        &quot;type&quot;: &quot;category&quot;,
+        &quot;axisLine&quot;: {
+            lineStyle: {
+                color: &#39;#90979c&#39;
+            }
+        },
+        &quot;splitLine&quot;: {
+            &quot;show&quot;: false
+        },
+        &quot;axisTick&quot;: {
+            &quot;show&quot;: false
+        },
+        &quot;splitArea&quot;: {
+            &quot;show&quot;: false
+        },
+        &quot;axisLabel&quot;: {
+            &quot;interval&quot;: 0,
+
+        },
+        &quot;data&quot;: xData,
+    }],
+    &quot;yAxis&quot;: [{
+        &quot;type&quot;: &quot;value&quot;,
+        &quot;splitLine&quot;: {
+            &quot;show&quot;: false
+        },
+        &quot;axisLine&quot;: {
+            lineStyle: {
+                color: &#39;#90979c&#39;
+            }
+        },
+        &quot;axisTick&quot;: {
+            &quot;show&quot;: false
+        },
+        &quot;axisLabel&quot;: {
+            &quot;interval&quot;: 0,
+
+        },
+        &quot;splitArea&quot;: {
+            &quot;show&quot;: false
+        },
+
+    }],
+    &quot;dataZoom&quot;: [{
+        &quot;show&quot;: true,
+        &quot;height&quot;: 30,
+        &quot;xAxisIndex&quot;: [
+            0
+        ],
+        bottom: 30,
+        &quot;start&quot;: 10,
+        &quot;end&quot;: 80,
+        handleIcon: &#39;path://M306.1,413c0,2.2-1.8,4-4,4h-59.8c-2.2,0-4-1.8-4-4V200.8c0-2.2,1.8-4,4-4h59.8c2.2,0,4,1.8,4,4V413z&#39;,
+        handleSize: &#39;100%&#39;,
+        handleStyle: {
+            color: &quot;#d3dee5&quot;,
+
+        },
+        textStyle: {
+            color: &quot;#90979c&quot;
+        },
+        borderColor: &quot;#90979c&quot;
+
+
+    }, {
+        &quot;type&quot;: &quot;inside&quot;,
+        &quot;show&quot;: true,
+        &quot;height&quot;: 15,
+        &quot;start&quot;: 1,
+        &quot;end&quot;: 35
+    }],
+    &quot;series&quot;: [{
+            &quot;name&quot;: &quot;Personal Development&quot;,
+            &quot;type&quot;: &quot;bar&quot;,
+            &quot;stack&quot;: &quot;总量&quot;,
+            &quot;barMaxWidth&quot;: 35,
+            &quot;barGap&quot;: &quot;10%&quot;,
+            &quot;itemStyle&quot;: {
+                &quot;normal&quot;: {
+                    &quot;color&quot;: &quot;#1C688E&quot;,
+                    &quot;label&quot;: {
+                        &quot;show&quot;: true,
+                        &quot;textStyle&quot;: {
+                            &quot;color&quot;: &quot;#FFFFFF&quot;
+                        },
+                        &quot;position&quot;: &quot;insideTop&quot;,
+                        formatter: function(p) {
+                            return p.value &gt; 0 ? (p.value) : &#39;&#39;;
+                        }
+                    }
+                }
+            },
+            &quot;data&quot;: [
+                4,
+                3,
+                3,
+                2,
+                3,
+                1,
+                5,
+                3,
+                2,
+                2,
+                2,
+                3
+            ],
+        },
+
+        {
+            &quot;name&quot;: &quot;Professional&quot;,
+            &quot;type&quot;: &quot;bar&quot;,
+            &quot;stack&quot;: &quot;总量&quot;,
+            &quot;itemStyle&quot;: {
+                &quot;normal&quot;: {
+                    &quot;color&quot;: &quot;#A0CCE2&quot;,
+                    &quot;barBorderRadius&quot;: 0,
+                    &quot;label&quot;: {
+                        &quot;show&quot;: true,
+                        &quot;textStyle&quot;: {
+                            &quot;color&quot;: &quot;#90979c&quot;
+                        },
+                        &quot;position&quot;: &quot;top&quot;,
+                        formatter: function(p) {
+                            return p.value &gt; 0 ? (p.value) : &#39;&#39;;
+                        }
+                    }
+                }
+            },
+            &quot;data&quot;: [
+                2,
+                3,
+                1,
+                1,
+                2,
+                1,
+                2,
+                3,
+                4,
+                3,
+                2,
+                0
+            ]
+        }, {
+            &quot;name&quot;: &quot;Amount&quot;,
+            &quot;type&quot;: &quot;line&quot;,
+            &quot;stack&quot;: &quot;总量&quot;,
+            symbolSize: 10,
+            symbol: &#39;circle&#39;,
+            &quot;itemStyle&quot;: {
+                &quot;normal&quot;: {
+                    &quot;color&quot;: &quot;#1C688E&quot;,
+                    &quot;barBorderRadius&quot;: 0,
+                    &quot;label&quot;: {
+                        &quot;show&quot;: true,
+                        &quot;position&quot;: &quot;top&quot;,
+                        formatter: function(p) {
+                            return p.value &gt; 0 ? (p.value) : &#39;&#39;;
+                        }
+                    }
+                }
+            },
+            &quot;data&quot;: [
+                6,
+                6,
+                4,
+                3,
+                5,
+                2,
+                7,
+                5,
+                6,
+                5,
+                4,
+                3
+            ]
+        },
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;p&gt;新旧网站的替换，内容搬运中…..&lt;/p&gt;
 
 &lt;ul&gt;
 
@@ -50,7 +308,7 @@
       </item>
     
       <item>
-        <title>如何运用Tableau做敏感性分析</title>
+        <title>基于Tableau的敏感性分析</title>
         <description>&lt;p&gt;最近闲来无事，做了个小型的数据分析研究。数据来源于在职选修的一门课程，属于Capstone的一个研究课题。数据量不大，工具也很简单。个人感觉，要做好数据分析，更重要的是解决问题的思路，流畅的算法，对整体流程要有清晰的思路。&lt;br /&gt;
 分析工具：EXCEL Solver, Tableau Dashboard&lt;/p&gt;
 
