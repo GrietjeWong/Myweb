@@ -9,7 +9,7 @@ image: /img/aga-putra-125108.jpg
 image-sm:
 ---
 核心技术：Echarts<br/>
-新旧网站的替换，内容搬运中...客官莫急..
+新旧网站的替换，内容搬运中.....
 
 <ul>
 
