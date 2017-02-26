@@ -5,8 +5,8 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Feb 2017 17:41:55 +0800</pubDate>
-    <lastBuildDate>Sun, 26 Feb 2017 17:41:55 +0800</lastBuildDate>
+    <pubDate>Sun, 26 Feb 2017 17:49:59 +0800</pubDate>
+    <lastBuildDate>Sun, 26 Feb 2017 17:49:59 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -790,7 +790,7 @@ option = {
         <guid isPermaLink="true">/2017/01/10/ECharts-2016Reading/</guid>
         
         
-        <category>DataAnalysis数据分析</category>
+        <category>DataAnalysis</category>
         
       </item>
     
@@ -867,7 +867,7 @@ It did took some time to generate the jittered map. But by changing the number i
         <guid isPermaLink="true">/2016/12/20/Sensitive-Analysis/</guid>
         
         
-        <category>DataAnalysis数据分析</category>
+        <category>DataAnalysis</category>
         
       </item>
     
@@ -925,7 +925,7 @@ $Jekyll Build  //当前文件夹内容自动生成到 &lt;code class=&quot;highl
         <guid isPermaLink="true">/2016/12/01/Sensitive-Analysis0/</guid>
         
         
-        <category>Journal杂七杂八</category>
+        <category>Journal</category>
         
       </item>
     

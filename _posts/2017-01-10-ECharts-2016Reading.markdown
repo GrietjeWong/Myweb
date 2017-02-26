@@ -3,7 +3,7 @@ layout: post
 title: "我的2016年读书数据"
 date: 2017-01-10
 categories:
-  - DataAnalysis数据分析
+  - DataAnalysis
 description:
 image: /img/james-tarbotton-367.jpg
 image-sm:

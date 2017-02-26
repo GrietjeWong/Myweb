@@ -3,7 +3,7 @@ layout: post
 title: "基于Tableau的敏感性分析"
 date: 2016-12-20
 categories:
-  - DataAnalysis数据分析
+  - DataAnalysis
 description:
 image: https://unsplash.it/2000/1200?image=668
 image-sm:
