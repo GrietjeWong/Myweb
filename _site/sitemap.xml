@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>/2017/02/14/%25E4%25B8%2580%25E4%25BB%25B6%25E5%25B9%25B8%25E7%25A6%258F%25E7%259A%2584%25E4%25BA%258B/</loc>
+<lastmod>2017-02-14T00:00:00+08:00</lastmod>
+</url>
+<url>
 <loc>/2017/01/10/ECharts-2016Reading/</loc>
 <lastmod>2017-01-10T00:00:00+08:00</lastmod>
 </url>
 <url>
+<loc>/2017/01/01/24y/</loc>
+<lastmod>2017-01-01T00:00:00+08:00</lastmod>
+</url>
+<url>
 <loc>/2016/12/20/Sensitive-Analysis/</loc>
+<lastmod>2016-12-20T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>/2016/12/20/RMachine/</loc>
 <lastmod>2016-12-20T00:00:00+08:00</lastmod>
 </url>
 <url>
@@ -16,7 +28,13 @@
 <loc>/archive/</loc>
 </url>
 <url>
+<loc>/category/dataanalysis/</loc>
+</url>
+<url>
 <loc>/</loc>
+</url>
+<url>
+<loc>/category/journal/</loc>
 </url>
 <url>
 <loc>/category/journal/</loc>

@@ -1,7 +1,7 @@
 # Site settings
 email: zhendi.huang@hotmail.com
 baseurl: ""
-paginate: 5
+paginate: 6
 paginate_path: "/blog/page-:num"
 google_analytics:
 
@@ -15,7 +15,7 @@ default_img:
 # Profile settings
 name: Zhendi Huang
 profile_img: /img/pf.jpg
-profile: My name is Zhendi. I am a data analyst and a programmer. I built up this website to share interesting ideas with you. If you like what I am doing, send me a message.
+profile: My name is Zhendi. I am a data analyst and a developer. I built up this website to share interesting ideas with you. If you like what I am doing, send me a message.
 social:
   github: https://github.com/GrietjeWong
 

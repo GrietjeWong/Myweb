@@ -1,0 +1,11 @@
+---
+layout: post
+title: "R语言构造--机器学习思维导图"
+date: 2016-12-20
+categories:
+  - DataAnalysis
+description:
+image: /img/aga-putra-125108.jpg
+image-sm:
+---
+搬运中。。。
