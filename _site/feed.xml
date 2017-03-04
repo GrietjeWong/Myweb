@@ -5,14 +5,22 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Feb 2017 00:01:24 +0800</pubDate>
-    <lastBuildDate>Tue, 28 Feb 2017 00:01:24 +0800</lastBuildDate>
+    <pubDate>Sun, 05 Mar 2017 00:45:42 +0800</pubDate>
+    <lastBuildDate>Sun, 05 Mar 2017 00:45:42 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>R语言探索性算法--机器学习</title>
-        <description>&lt;p&gt;R语言在机器学习领域应用之广，比较为人知的，就是大量数据集的训练了。但凡有过一点数据分析基础的，上手机器学习算法并不特别难，R的算法也是触类旁通。不像C，学完C，还有C++， 学完C++， 还有C#。。。我的大学生活，基本从《计算机导论》开始，到看《如何治疗颈椎病》结束。🙂️ &lt;br /&gt;&lt;/p&gt;
+        <title>Statistics With R</title>
+        <description>&lt;p&gt;想写一篇关于R的文章。&lt;/p&gt;
 
+&lt;p&gt;自己自从接触了R以后，感觉爱不释手。R语言在机器学习领域应用之广，也是比较为人知的。但凡有过一点数据分析基础的，上手机器学习算法并不特别难，R的算法也是触类旁通。不像C，学完C，还有C++， 学完C++， 还有C#。。。我的大学生活，基本从《计算机导论》开始，到看《如何治疗颈椎病》结束。🙂️ &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;下面这张图，是自己在复习R语言基础时总结出来的，涵盖了关于R的一些最基本的信息，如主要作用、基本数据结构，以及重要的“一句话”函数等。说到这里，真的感觉R相比其他语言用起来顺手很多，特别是在构造循环的时候，不用写太多的if else, 又能实现for和while的很多功能。另外，R提供了很多自带的用于练习的database, 帮助不知道从哪里获得练习数据，以及数据源懒惰的学习者节省了太多时间和精力。&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;/img/RBasis.png&quot; alt=&quot;&quot; /&gt;
+  &lt;figcaption&gt;主要工具：百度脑图&lt;/figcaption&gt;
+&lt;/figure&gt;
 &lt;p&gt;更新中。。。&lt;/p&gt;
 </description>
         <pubDate>Tue, 21 Feb 2017 00:00:00 +0800</pubDate>
@@ -26,7 +34,7 @@
     
       <item>
         <title>一件幸福的事</title>
-        <description>&lt;p&gt;愿你的生活All Peaches and Cream。&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;“愿你的生活美满如初见。”&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;晚上回来随机打开一部电影，名字叫做《一件幸福的事》，看电影这件事情，从来都不需要什么仪式感。&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -943,7 +951,7 @@ It did took some time to generate the jittered map. But by changing the number i
     
       <item>
         <title>用Jekyll建立个人网站的一些碎碎念</title>
-        <description>&lt;p&gt;爱有太多的面目，“隐士”为自己设立目标，才有了世外桃源h&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;爱有太多的面目，“隐士”为自己设立目标，才有了世外桃源。我把自己建立这个网站的心酸都写在这里了。。&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;碎碎念太多，无处安置，在GoDaddy上买了个打折的两年期域名之后，决定对之前的网站进行一次大翻新。想把很多东西都搬到这里来，比如目前正在研究的机器学习，和之前在Kaggle上参赛过的分析作品。&lt;/p&gt;
 
